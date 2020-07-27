@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style type="text/css">
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                font-size: 14px;
+                font-family: "Microsoft Yahei", "SimSun";
+                height: 8888px;
+            }
+            .header{
+                height: 58px;
+                background-color: #191D3A;
+            }
+            /*版心*/
+            .inner_c{
+                width: 1000px;
+                margin: 0 auto; /*让导航条、内容区域等部分的版心在父元素里居中*/
+            }
+            .header .logo{
+                float: left;
+                margin-right: 40px;
+                margin-top: 10px;
+            }
+            .header .list{
+                float: left;
+            }
+            .header .list ul{
+                list-style: none;
+            }
+            .header .list ul li{
+                float: left;
+                width: 100px;
+                line-height: 58px; /*让行高等于这一行的高度，保证里面的文字垂直居中*/
+                border-left: 1px solid #252947;
+            }
+            .header .list ul li.last{
+                float: left;
+                width: 100px;
+                line-height: 58px;
+                border-left: 1px solid #252947;
+            }
+            .header .list ul li a{
+                display: block; /*将超链接转化为块，可以霸占父亲的整行*/
+                height: 58px;
+                text-decoration: none; /*去除超链接的下划线*/
+                color: #818496;
+                text-align: center;
+            }
+            .header .list ul li a.index{
+                color: white;
+                background: #252947;
+            }
+            .header .list ul li a:hover{
+                color: white;
+                background: #252947;
+            }
+            .header .joinus_box{
+                float: left;
+                height: 58px;
+                width: 100px;
+                padding-left: 48px;
+                padding-top: 12px;
+            }
+            .header .joinus_box .joinus{
+                height: 34px;
+                background-color: green;
+                text-align: center;
+            }
+            .header .joinus_box .joinus a{
+                display: block;
+                line-height: 34px;/*将行高设置为背景图片的高度，保证超链接在背景里垂直居中*/
+                text-decoration: none;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="inner_c"> <!--定义导航栏-->
+                <div class="logo">
+                    <img src="http://www.boyaa.com/images/logo.png" alt="">
+                </div>
+                <div class="list">
+                    <ul> <!--定义无序列表-->
+                        <li><a href="#" class="index">首页</a></li>
+                        <li><a href="#">博雅游戏</a></li>
+                        <li><a href="#">博雅新闻</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">客服中心</a></li>
+                        <li class="last"><a hred="#">投资者关系</a></li>
+                    </ul>
+                </div>
+                <div class="joinus_box"> <!--加入我们-->
+                    <div class="joinus">
+                        <a href="https://www.google.com" target="_blank">加入我们</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
