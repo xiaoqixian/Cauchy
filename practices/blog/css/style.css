@@ -1,0 +1,94 @@
+body {
+    background-color: gray;
+}
+
+.w {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    width: 400px;
+    left: 0px;
+    top: 0px;
+}
+
+.w .fl .catalog {
+    height: 540px;
+}
+
+.w .fl .catalog .back{
+    height: 180px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+
+    /* 为了使文字居于正中间*/
+    display: -moz-box;/*兼容Firefox*/
+    display: -webkit-box;/*兼容FSafari、Chrome*/
+
+    -moz-box-align: center;/*兼容Firefox*/
+    -webkit-box-align: center;/*兼容FSafari、Chrome */
+
+    -moz-box-pack: center;/*兼容Firefox*/
+    -webkit-box-pack: center;/*兼容FSafari、Chrome */
+}
+
+.w .fl .catalog .list {
+    height: 360px;
+}
+
+.w .fl .catalog .list ul li {
+    list-style: none;
+}
+
+.w .profile .avatar{
+    margin-left: 80px;
+}
+
+.w .profile .name {
+    display: -moz-box;/*兼容Firefox*/
+    display: -webkit-box;/*兼容FSafari、Chrome*/
+
+    -moz-box-align: center;/*兼容Firefox*/
+    -webkit-box-align: center;/*兼容FSafari、Chrome */
+
+    -moz-box-pack: center;/*兼容Firefox*/
+    -webkit-box-pack: center;/*兼容FSafari、Chrome */
+
+    font-size: 20px;
+}
+
+.w .profile .numbers {
+    margin-top: 10px;
+    height: 60px;
+}
+
+.w .profile .numbers .w {
+    margin-left: 75px;
+}
+
+.w .profile .numbers .w div{
+    width: 60px;
+    float: left;
+}
+
+.w .profile .numbers .w .diary {
+    border-right-color: black;
+    border-right-width: 4px;
+}
+
+.w .profile .numbers .w .kind {
+    border-right-color: black;
+    border-right-width: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.w .profile .links div{
+    float: left;
+}
